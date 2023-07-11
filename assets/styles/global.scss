@@ -13,8 +13,8 @@ $red : red;
 
 // animations
 
-@keyframes starsmovement {
-    100%{transform: translateY(3000px);}
+@keyframes starsani {
+    to{transform: translateY(200px);}
 }
 
 // functions
@@ -25,8 +25,8 @@ $red : red;
     border-radius: 50%;
     box-shadow: 0 0 3px 1px $white;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    top: -250px;
+    // left: 100px;
 
     @for $a from 1 through 100 {
         &:nth-of-type(#{$a}) {

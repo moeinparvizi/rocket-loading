@@ -5,15 +5,17 @@
     height: 100vh;
     background-image: radial-gradient(circle, #1b2734, #18202b, #151a22, #111419, #090b10);
     position: relative;
+    overflow: hidden;
     >.big{
-        width: 100%;
-        height: 100%;
         >.star{
+            position: relative;
+            animation: starsani 10s linear infinite;
             @include starf(5);
         }
     }
     >.small{
         >.star{
+            animation: starsani 20s linear infinite;
             @include starf(1);
         }
     }
