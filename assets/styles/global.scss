@@ -1,0 +1,39 @@
+// colors
+$bglight : #1B2734;
+$bgdark : #090B10;
+$white : #fff;
+$red : red;
+
+// codes
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// -webkit-clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
+// clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
+
+// background-image: radial-gradient(circle, #1b2734, #18202b, #151a22, #111419, #090b10);
+
+
+// functions
+@mixin starf($size) {
+    background-color: $white;
+    width: $size+px;
+    height: $size+px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px $white;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+
+    @for $a from 1 through 100 {
+        &:nth-of-type(#{$a}) {
+            top: (random(50))+#{'%'};
+            left: (random(100))+#{'%'};
+        }
+    }
+}
+
+// animations

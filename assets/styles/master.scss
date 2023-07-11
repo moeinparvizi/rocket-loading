@@ -1,0 +1,21 @@
+@import "global";
+
+.background{
+    width: 100%;
+    height: 200vh;
+    background-image: radial-gradient(circle, #1b2734, #18202b, #151a22, #111419, #090b10);
+    -webkit-clip-path: polygon(100% 0, 100% 57%, 0 57%, 0 0);
+    clip-path: polygon(100% 0, 100% 57%, 0 57%, 0 0);
+    border: 1px solid red;
+    position: relative;
+    >.big{
+        >.star{
+            @include starf(5);
+        }
+    }
+    >.small{
+        >.star{
+            @include starf(1);
+        }
+    }
+}
