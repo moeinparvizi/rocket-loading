@@ -18,7 +18,17 @@ $red : red;
 }
 @keyframes earthani {
     from{top: -1000px;}
-    to{top: -500px;}
+    to{top: -400px;}
+}
+@keyframes firerocketani {
+    from{
+        box-shadow: 0 0 20px red;
+        top: 52%;
+    }
+    to{
+        box-shadow: 0 0 40px red;
+        top: 54%;
+    }
 }
 // functions
 @mixin starf($size) {
