@@ -2,13 +2,12 @@
 
 .background{
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     background-image: radial-gradient(circle, #1b2734, #18202b, #151a22, #111419, #090b10);
-    -webkit-clip-path: polygon(100% 0, 100% 57%, 0 57%, 0 0);
-    clip-path: polygon(100% 0, 100% 57%, 0 57%, 0 0);
-    border: 1px solid red;
     position: relative;
     >.big{
+        width: 100%;
+        height: 100%;
         >.star{
             @include starf(5);
         }
@@ -18,4 +17,30 @@
             @include starf(1);
         }
     }
+}
+
+.rocket{
+    background-color: $white;
+    -webkit-clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
+    clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+}
+.fire-rocket{
+    background-color: yellow;
+    height: 200px;
+    width: 30px;
+    border-radius: 70%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-28%);
+    box-shadow: 0 0 20px red;
+    border: 4px solid red;
+    z-index: 1;
 }

@@ -4,18 +4,18 @@ $bgdark : #090B10;
 $white : #fff;
 $red : red;
 
-// codes
+// Repetitious Codes
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-// -webkit-clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
-// clip-path: polygon(50% 0%, 82% 24%, 83% 65%, 100% 100%, 0 100%, 20% 68%, 20% 25%);
+// animations
 
-// background-image: radial-gradient(circle, #1b2734, #18202b, #151a22, #111419, #090b10);
-
+@keyframes starsmovement {
+    100%{transform: translateY(3000px);}
+}
 
 // functions
 @mixin starf($size) {
@@ -30,10 +30,8 @@ $red : red;
 
     @for $a from 1 through 100 {
         &:nth-of-type(#{$a}) {
-            top: (random(50))+#{'%'};
+            top: (random(100))+#{'%'};
             left: (random(100))+#{'%'};
         }
     }
 }
-
-// animations
