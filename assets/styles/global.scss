@@ -16,7 +16,10 @@ $red : red;
 @keyframes starsani {
     to{transform: translateY(200px);}
 }
-
+@keyframes earthani {
+    from{top: -1000px;}
+    to{top: -500px;}
+}
 // functions
 @mixin starf($size) {
     background-color: $white;
