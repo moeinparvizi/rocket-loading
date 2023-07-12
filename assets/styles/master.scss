@@ -34,7 +34,7 @@
     transform: translate(-50%,-50%);
 }
 .fire-rocket{
-    background-color: yellow;
+    background-color: $yellow;
     height: 200px;
     width: 30px;
     border-radius: 70%;
@@ -42,8 +42,8 @@
     top: 52%;
     left: 50%;
     transform: translate(-50%,-28%);
-    box-shadow: 0 0 20px red;
-    border: 4px solid red;
+    box-shadow: 0 0 20px $red;
+    border: 4px solid $red;
     z-index: 1;
     animation: firerocketani 1s infinite alternate;
 }
@@ -54,7 +54,7 @@
     translate: -50% 0;
     animation: earthani 10s infinite;
     >img{
-        box-shadow: 0 0 30px blue;
+        box-shadow: 0 0 30px $blue;
         border-radius: 50%;
     }
 }

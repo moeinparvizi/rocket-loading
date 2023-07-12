@@ -2,7 +2,9 @@
 $bglight : #1B2734;
 $bgdark : #090B10;
 $white : #fff;
-$red : red;
+$red : #ff0000;
+$yellow : #ffff00;
+$blue : #0000ff;
 
 // Repetitious Codes
 * {
@@ -22,11 +24,11 @@ $red : red;
 }
 @keyframes firerocketani {
     from{
-        box-shadow: 0 0 20px red;
+        box-shadow: 0 0 20px $red;
         top: 52%;
     }
     to{
-        box-shadow: 0 0 40px red;
+        box-shadow: 0 0 40px $red;
         top: 54%;
     }
 }
